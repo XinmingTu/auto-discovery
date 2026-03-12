@@ -1,0 +1,2 @@
+seed_id	status	score	min_area_normalized	commit	parent_seed	seed_path	strategy
+heilconv13-baseline-random	active	0.010423103755	0.000322458404268	bootstrap	-	seeds/baseline_random.py	imported random unit-square baseline from SkyDiscover

@@ -1,0 +1,17 @@
+{
+  "name": "heilbronn_convex_13",
+  "domain": "math",
+  "objective": "maximize",
+  "entry_file": "solve.py",
+  "evaluator_file": "evaluator.py",
+  "primary_metric": "combined_score",
+  "display_metrics": [
+    "min_area_normalized"
+  ],
+  "allowed_edit_paths": [
+    "solve.py"
+  ],
+  "timeout_sec": 600,
+  "description": "Place 13 points in the plane to maximize the minimum triangle area normalized by convex hull area.",
+  "source": "Imported from references/skydiscover/benchmarks/math/heilbronn_convex/13"
+}

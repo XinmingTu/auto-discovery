@@ -1,0 +1,2 @@
+seed_id	status	score	min_max_ratio	commit	parent_seed	seed_path	strategy
+mmmd3-baseline-random	active	0.0179913145787	0.00431876221779	bootstrap	-	seeds/baseline_random.py	imported random Gaussian baseline from SkyDiscover

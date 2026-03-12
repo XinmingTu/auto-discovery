@@ -1,0 +1,17 @@
+{
+  "name": "minimizing_max_min_dist_3",
+  "domain": "math",
+  "objective": "maximize",
+  "entry_file": "solve.py",
+  "evaluator_file": "evaluator.py",
+  "primary_metric": "combined_score",
+  "display_metrics": [
+    "min_max_ratio"
+  ],
+  "allowed_edit_paths": [
+    "solve.py"
+  ],
+  "timeout_sec": 600,
+  "description": "Place 14 points in 3D to maximize the squared ratio of minimum to maximum pairwise distance.",
+  "source": "Imported from references/skydiscover/benchmarks/math/minimizing_max_min_dist/3"
+}
