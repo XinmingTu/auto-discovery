@@ -1,0 +1,13 @@
+/references/
+/runs/
+/tasks/**/artifacts/
+/tasks/**/results.tsv
+/tasks/**/run.log
+
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+
+.DS_Store

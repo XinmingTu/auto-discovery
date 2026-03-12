@@ -1,0 +1,19 @@
+{
+  "name": "circle_packing",
+  "domain": "math",
+  "objective": "maximize",
+  "entry_file": "solve.py",
+  "evaluator_file": "evaluator.py",
+  "primary_metric": "combined_score",
+  "display_metrics": [
+    "sum_radii",
+    "target_ratio",
+    "validity"
+  ],
+  "allowed_edit_paths": [
+    "solve.py"
+  ],
+  "timeout_sec": 600,
+  "description": "Pack 26 non-overlapping circles inside the unit square to maximize the sum of radii.",
+  "source": "Imported from references/skydiscover/benchmarks/math/circle_packing"
+}
