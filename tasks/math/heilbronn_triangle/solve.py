@@ -1,15 +1,29 @@
-"""Baseline Heilbronn triangle seed imported from SkyDiscover."""
+"""Deterministic 11-point construction for the Heilbronn triangle task."""
 
 from __future__ import annotations
 
 import numpy as np
 
-N_POINTS = 11
+_POINTS = np.array(
+    [
+        [0.4279845295543236, 0.7412909500398202],
+        [0.1062310826141215, 0.0710766927753885],
+        [0.5906647921426612, 0.4392918971067320],
+        [0.8521744270583328, 0.2560414029912148],
+        [0.7225470220844938, 0.0000000000010000],
+        [0.5720154704456765, 0.7412909500398202],
+        [0.8937689173858787, 0.0710766927753883],
+        [0.4093352078573388, 0.4392918971067318],
+        [0.1478255729416673, 0.2560414029912148],
+        [0.2774529779155065, 0.0000000000010000],
+        [0.5000000000000000, 0.2111264259190374],
+    ],
+    dtype=np.float64,
+)
 
 
 def heilbronn_triangle11() -> np.ndarray:
-    points = np.zeros((N_POINTS, 2), dtype=np.float64)
-    return points
+    return _POINTS.copy()
 
 
 if __name__ == "__main__":
