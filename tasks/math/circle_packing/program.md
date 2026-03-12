@@ -24,6 +24,24 @@ Reference target:
 
 - `sum_radii = 2.635`
 
+## Setup
+
+This task should run in a dedicated worktree branch, not on `main`.
+
+Before doing experiments:
+
+1. confirm the current branch with `git branch --show-current`
+2. confirm the current directory with `pwd`
+3. if you are on `main`, stop and tell the human to spawn a fresh worktree with:
+
+```bash
+python scripts/spawn_agents.py math/circle_packing
+```
+
+4. if you are already on a dedicated branch such as `autodiscovery/...`, continue
+5. read the in-scope files listed below
+6. run the baseline once before making any edits
+
 ## Files
 
 Read:
@@ -155,6 +173,8 @@ If a change is worse, invalid, or crashes:
 ## Git rule
 
 This worktree is for one autonomous run.
+
+Do not commit experimental changes on `main`.
 
 Suggested loop:
 

@@ -1,0 +1,2 @@
+seed_id	status	score	radii_sum	commit	parent_seed	seed_path	strategy
+rect-baseline-zero	active	0	0	bootstrap	-	seeds/baseline_zero.py	imported all-zero baseline from SkyDiscover

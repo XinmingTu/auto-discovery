@@ -1,0 +1,17 @@
+{
+  "name": "circle_packing_rect",
+  "domain": "math",
+  "objective": "maximize",
+  "entry_file": "solve.py",
+  "evaluator_file": "evaluator.py",
+  "primary_metric": "combined_score",
+  "display_metrics": [
+    "radii_sum"
+  ],
+  "allowed_edit_paths": [
+    "solve.py"
+  ],
+  "timeout_sec": 360,
+  "description": "Pack 21 non-overlapping circles into a rectangle of perimeter 4 to maximize the sum of radii.",
+  "source": "Imported from references/skydiscover/benchmarks/math/circle_packing_rect"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "heilbronn_triangle",
+  "domain": "math",
+  "objective": "maximize",
+  "entry_file": "solve.py",
+  "evaluator_file": "evaluator.py",
+  "primary_metric": "combined_score",
+  "display_metrics": [
+    "min_area_normalized"
+  ],
+  "allowed_edit_paths": [
+    "solve.py"
+  ],
+  "timeout_sec": 600,
+  "description": "Place 11 points inside an equilateral triangle to maximize the smallest normalized triangle area.",
+  "source": "Imported from references/skydiscover/benchmarks/math/heilbronn_triangle"
+}
