@@ -16,11 +16,10 @@ Despite its minimal nature, this scaffold has already produced competitive resul
 
 Note on rigor:
 
-- The table below is a directional reference, not a strictly controlled apples-to-apples benchmark.
+- The tables below are directional references, not a strictly controlled apples-to-apples benchmark.
 - External systems use different LLM backbones, search budgets, and reporting conventions.
 - Some published numbers are rounded aggressively, so tiny gaps or ties may be hidden by display precision.
-- Bold marks the numerically best shown value in that column.
-- For SkyDiscover, the `n=16,d=2` inverse-distance value comes from the EvoX paper, while the blog and AdaEvolve paper explicitly discuss the `n=14,d=3` case.
+- Bold marks the numerically best shown method/value in each task table.
 
 Metric conventions:
 
@@ -28,12 +27,50 @@ Metric conventions:
 - For `minimizing_max_min_dist/2` and `minimizing_max_min_dist/3`, the table uses the inverse metric `(d_max / d_min)^2`, so lower is better.
 - `-` means the published source I checked does not report that exact task/result pair.
 
-| Method | Circle Packing Square `n=26` `↑` | Circle Packing Rectangle `n=21` `↑` | Heilbronn Triangle `n=11` `↑` | Inverse Max/Min Dist `n=16,d=2` `↓` | Inverse Max/Min Dist `n=14,d=3` `↓` |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| AlphaEvolve | `2.6358627564136983` | `2.3658321334167627` | **`0.036529889880030156`** | `12.88926611203463` | `4.165849767` |
-| SkyDiscover (best published AdaEvolve/EvoX) | `2.63598308` | `2.36583237` | `0.036` | `12.89` | `4.16579879192` |
-| LoongFlow | `2.6359829624734026` | `2.365832229500823` | `0.0365298898793351` | `12.889243547212832` | `-` |
-| **auto-discovery** | **`2.63598308911`** | **`2.36584169299`** | **`0.036529889880030156`** | **`12.8892299077`** | **`4.16578347458007`** |
+### Circle Packing Square `n=26` `↑`
+
+| Method | Value | Source |
+| :--- | :--- | :--- |
+| AlphaEvolve | `2.6358627564136983` | [LoongFlow README](https://github.com/baidu-baige/LoongFlow) |
+| SkyDiscover (best published AdaEvolve/EvoX) | `2.63598308` | [AdaEvolve paper](https://arxiv.org/pdf/2602.20133) |
+| LoongFlow | `2.6359829624734026` | [LoongFlow README](https://github.com/baidu-baige/LoongFlow) |
+| **auto-discovery** | **`2.63598308911`** | [results.tsv](tasks/math/circle_packing/results.tsv) |
+
+### Circle Packing Rectangle `n=21` `↑`
+
+| Method | Value | Source |
+| :--- | :--- | :--- |
+| AlphaEvolve | `2.3658321334167627` | [LoongFlow README](https://github.com/baidu-baige/LoongFlow) |
+| SkyDiscover (best published AdaEvolve/EvoX) | `2.36583237` | [SkyDiscover blog](https://skydiscover-ai.github.io/blog.html) |
+| LoongFlow | `2.365832229500823` | [LoongFlow README](https://github.com/baidu-baige/LoongFlow) |
+| **auto-discovery** | **`2.36584169299`** | [results.tsv](tasks/math/circle_packing_rect/results.tsv) |
+
+### Heilbronn Triangle `n=11` `↑`
+
+| Method | Value | Source |
+| :--- | :--- | :--- |
+| **AlphaEvolve** | **`0.036529889880030156`** | [LoongFlow README](https://github.com/baidu-baige/LoongFlow) |
+| SkyDiscover (best published AdaEvolve/EvoX) | `0.036` | [AdaEvolve paper](https://arxiv.org/pdf/2602.20133) |
+| LoongFlow | `0.0365298898793351` | [LoongFlow README](https://github.com/baidu-baige/LoongFlow) |
+| **auto-discovery** | **`0.036529889880030156`** | [results.tsv](tasks/math/heilbronn_triangle/results.tsv) |
+
+### Inverse Max/Min Dist `n=16,d=2` `↓`
+
+| Method | Value | Source |
+| :--- | :--- | :--- |
+| AlphaEvolve | `12.88926611203463` | [LoongFlow README](https://github.com/baidu-baige/LoongFlow) |
+| SkyDiscover (best published AdaEvolve/EvoX) | `12.89` | [EvoX paper](https://arxiv.org/pdf/2602.23413) |
+| LoongFlow | `12.889243547212832` | [LoongFlow README](https://github.com/baidu-baige/LoongFlow) |
+| **auto-discovery** | **`12.8892299077`** | [results.tsv](tasks/math/minimizing_max_min_dist/2/results.tsv) |
+
+### Inverse Max/Min Dist `n=14,d=3` `↓`
+
+| Method | Value | Source |
+| :--- | :--- | :--- |
+| AlphaEvolve | `4.165849767` | [SkyDiscover blog](https://skydiscover-ai.github.io/blog.html) |
+| SkyDiscover (best published AdaEvolve/EvoX) | `4.16579879192` | [SkyDiscover blog](https://skydiscover-ai.github.io/blog.html) |
+| LoongFlow | `-` | `-` |
+| **auto-discovery** | **`4.16578347458007`** | [results.tsv](tasks/math/minimizing_max_min_dist/3/results.tsv) |
 
 ## The minimal setup
 
