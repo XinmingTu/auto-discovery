@@ -1,32 +1,32 @@
-"""Deterministic 14-point construction for minimizing_max_min_dist in 3D."""
+"""Deterministic layered 14-point construction for minimizing_max_min_dist in 3D."""
 
 from __future__ import annotations
 
 import numpy as np
 
-POINTS = np.array(
-    [
-        [0.561450954156, -0.921351650308, -0.137465139020],
-        [0.250998620959, 1.053965872142, -0.095751420493],
-        [0.092666967375, 0.540645683568, -0.939216577732],
-        [-0.133779272850, -0.043801064472, 1.078516237616],
-        [1.001745368961, 0.163512523834, -0.287554598536],
-        [-0.678670302264, -0.088813157365, -0.845299678099],
-        [-0.135572226597, -0.910391665187, 0.579499688722],
-        [-0.404431833810, 0.800283489796, 0.615624828653],
-        [-1.001745368966, -0.163512523826, 0.287554598524],
-        [-0.676877348517, 0.777777443349, -0.346283129205],
-        [0.247893133974, -0.447013077657, -0.960073436995],
-        [-0.408017741304, -0.932897711633, -0.382408269136],
-        [0.564556441142, 0.579627299491, 0.726856877482],
-        [0.719782607740, -0.408031461734, 0.706000018219],
-    ],
-    dtype=np.float64,
-)
+TWO_PI_OVER_THREE = 2.0 * np.pi / 3.0
+
+
+def _triangle_layer(x_coord: float, radius: float, angle: float) -> np.ndarray:
+    return np.array(
+        [
+            [x_coord, radius * np.cos(angle + k * TWO_PI_OVER_THREE), radius * np.sin(angle + k * TWO_PI_OVER_THREE)]
+            for k in range(3)
+        ],
+        dtype=np.float64,
+    )
 
 
 def min_max_dist_dim3_14() -> np.ndarray:
-    return POINTS.copy()
+    layers = [
+        np.array([[0.0, 0.0, 0.0]], dtype=np.float64),
+        _triangle_layer(-0.8164965809277264, 0.5773502691896257, 0.0),
+        _triangle_layer(-0.32909696753644735, 1.00452541004774, -np.pi / 3.0),
+        np.array([[1.1411678799150242, 0.0, 0.0]], dtype=np.float64),
+        _triangle_layer(0.08816267789085401, 0.9961060898454107, 2.198566545727455),
+        _triangle_layer(0.6376555162215236, 0.863988020523308, 1.2770183552029313),
+    ]
+    return np.vstack(layers)
 
 
 if __name__ == "__main__":
