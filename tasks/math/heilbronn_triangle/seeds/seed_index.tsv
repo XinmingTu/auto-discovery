@@ -1,2 +1,3 @@
 seed_id	status	score	min_area_normalized	commit	parent_seed	seed_path	strategy
-heil-baseline-zero	active	0	0	bootstrap	-	seeds/baseline_zero.py	imported all-zero baseline from SkyDiscover
+heil-baseline-zero	archived	0	0	bootstrap	-	seeds/baseline_zero.py	imported all-zero baseline from SkyDiscover
+heil-scratch-search-v1	active	0.976774270806	0.0356814565502	a0fe524	heil-baseline-zero	seeds/scratch_search_v1.py	deterministic 11-point scratch-search construction promoted from a Codex worktree

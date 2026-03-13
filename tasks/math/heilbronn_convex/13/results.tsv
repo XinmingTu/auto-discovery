@@ -1,0 +1,2 @@
+timestamp	commit	status	score	min_area_normalized	wall_seconds	notes
+2026-03-12T16:39:58-07:00	bootstrap	baseline	0.010423103755	0.000322458404268	0.039	imported random unit-square baseline from SkyDiscover

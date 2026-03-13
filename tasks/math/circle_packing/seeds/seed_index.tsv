@@ -1,2 +1,3 @@
 seed_id	status	score	sum_radii	validity	commit	parent_seed	seed_path	strategy
-cp-baseline-ring	active	0.364236894496	0.959764216996	1	bfcaeb4	-	seeds/baseline_ring.py	center plus two ring baseline with greedy radius clipping
+cp-baseline-ring	archived	0.364236894496	0.959764216996	1	bfcaeb4	-	seeds/baseline_ring.py	center plus two ring baseline with greedy radius clipping
+cp-shell-asym-basin-v1	active	0.998471448831	2.63097226767	1	8b67f59	cp-baseline-ring	seeds/shell_asym_basin_v1.py	fixed 26-circle shell-derived asymmetric layout polished in Codex worktree

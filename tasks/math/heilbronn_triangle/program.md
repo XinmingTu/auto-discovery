@@ -146,6 +146,7 @@ Not allowed:
 - editing `evaluator.py`
 - editing `task.json`
 - editing the runner or log files to fake a better score
+- searching the web for direct answers, published coordinates, benchmark-specific solutions, or existing final constructions
 - changing shapes or APIs to bypass validation
 
 The only improvement that counts is a better verified result from the fixed evaluator.

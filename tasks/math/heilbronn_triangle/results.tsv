@@ -1,2 +1,4 @@
 timestamp	commit	status	score	min_area_normalized	wall_seconds	notes
 2026-03-12T16:12:40-07:00	bootstrap	baseline	0	0	0.002	imported all-zero point baseline from SkyDiscover
+2026-03-12T17:08:09-07:00	a0fe524	milestone	0.976774270806	0.0356814565502	0.002	scratch-search 11-point construction promoted from Codex worktree
+2026-03-12T18:14:55-07:00	4773572	best	1	0.03652988988	0.007	scratch-only D1 restart sweep rediscovered benchmark construction

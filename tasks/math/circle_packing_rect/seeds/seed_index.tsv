@@ -1,2 +1,3 @@
 seed_id	status	score	radii_sum	commit	parent_seed	seed_path	strategy
-rect-baseline-zero	active	0	0	bootstrap	-	seeds/baseline_zero.py	imported all-zero baseline from SkyDiscover
+rect-baseline-zero	archived	0	0	bootstrap	-	seeds/baseline_zero.py	imported all-zero baseline from SkyDiscover
+rect-tolerance-pack-v1	active	1.00000404068	2.36584169299	4fa0a2b	rect-baseline-zero	seeds/tolerance_pack_v1.py	deterministic 21-circle rectangle packing with a tolerance-aware safety margin

@@ -1,0 +1,2 @@
+timestamp	commit	status	score	min_max_ratio	wall_seconds	notes
+2026-03-12T16:39:58-07:00	bootstrap	baseline	0.0179913145787	0.00431876221779	0.303	imported random Gaussian baseline from SkyDiscover
