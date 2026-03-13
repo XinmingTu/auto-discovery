@@ -10,6 +10,8 @@ if we want an LLM like Codex to act as a discovery agent on math optimization ta
 
 The repo itself is part of that experiment. `auto-discovery` is also being built in a Codex-first, vibe-research / vibe-coding style: the agent is not only used on the benchmark tasks, but also used to shape the scaffold, the task conventions, the documentation, and the iteration workflow around them.
 
+Most of the current experiments and repo iteration here have been run with Codex using GPT-5.4 xhigh.
+
 Evaluators and several task scaffolds in `tasks/math/` are adapted from the SkyDiscover benchmark definitions, then repackaged into self-contained task directories for this repo. The benchmark source of truth can stay in `references/`, but the runnable tasks here are entirely self-contained. `references/` is ignored by git on purpose.
 
 ## Exploratory results
