@@ -3,3 +3,6 @@ timestamp	commit	status	score	sum_radii	validity	wall_seconds	notes
 2026-03-12T15:58:11-07:00	b9c881b	milestone	0.996625945587	2.62610936662	1	0.184	hardcoded 7-row packing from Codex worktree
 2026-03-12T16:00:07-07:00	0217f05	milestone	0.998227083189	2.6303283642	1	0.186	asymmetric improved packing verified from Codex worktree
 2026-03-12T17:08:09-07:00	8b67f59	best	0.998471448831	2.63097226767	1	0.163	shell-derived asymmetric layout polished with basin hopping in Codex worktree
+2026-03-12T17:07:22-07:00	5c052af	best	0.999254356308	2.63303522887	1	0.165	long-basin shell packing from Codex worktree
+2026-03-12T17:11:21-07:00	d742719	best	1.00037308726	2.63598308492	1	0.167	target-beating basin search from Codex worktree
+2026-03-12T17:40:37-07:00	2d310f1	best	1.00037308885	2.63598308911	1	0.260	strict cluster-surgery packing from Codex worktree
